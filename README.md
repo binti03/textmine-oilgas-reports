@@ -1,4 +1,22 @@
-# Jupyter Notebook - Anaconda Installation
+## Updates:
+
+A conda environment file `tm-oil.yml` is now added to the repo along with the data files.  Please update your local repo to reflect these changes. Then navigate to the repo folder on your local file system using command line to create a conda virtual environment. Here are the steps:
+
+- create environment : `conda env create -f tm-oil.yml`
+- activate environment: `activate tm-oil` for Windows, `source activate tm-oil` for Linux/Mac
+- start or reload your jupyter notebook to select the environment from kernel  
+
+<img src="C:\Users\Astron\Documents\Oil and Gas Accident Reports - Text Mining\kernel_env.jpg" width=600px align>
+
+- While working on the file, if you need to install new packages use  `conda install [package_name]` . Make sure that the environment is active, else use `conda install -n myenv [package_name]`
+- Always export your environment (if it contains changes) before you push files to the remote repo. You can use `conda env export > tm-oil.yml` to generate a *yaml* file. 
+- When another team member updates the *yaml* file on remote repo, you can download it and update your local environment using `conda env update -f tm-oil.yml` 
+
+The conda virtual environment allows us to isolate a project and keeps the dependencies (packages and python versions) in separate “sandboxes” so we can switch between multiple projects without any hassles. 
+
+
+
+## Jupyter Notebook - Anaconda Installation
 
 This tutorial will show how to install Jupyter Notebook via Anaconda on your machine (assuming that you have Python 3 or higher installed). The installation process is pretty straight-forward, installing Anaconda  distribution will in turn install  Jupyter notebook and several other important packages like NumPy, Pandas.
 
