@@ -6,7 +6,7 @@ A conda environment file `tm-oil.yml` is now added to the repo along with the da
 - activate environment: `activate tm-oil` for Windows, `source activate tm-oil` for Linux/Mac
 - start or reload your jupyter notebook to select the environment from kernel  
 
-![kernel_env](C:\Users\Astron\Documents\Oil and Gas Accident Reports - Text Mining\img\kernel_env.jpg)
+![kernel_env](img\kernel_env.jpg)
 
 - While working on the file, if you need to install new packages use  `conda install [package_name]` . Make sure that the environment is active, else use `conda install -n myenv [package_name]`
 - Always export your environment (if it contains changes) before you push files to the remote repo. You can use `conda env export > tm-oil.yml` to generate a *yaml* file. 
