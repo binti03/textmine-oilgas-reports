@@ -1,4 +1,11 @@
-## Updates:
+## Updates (Nov-12):
+
+- Text Preprocessing and Structuring is performed for all accident reports for the years 2017 -  2013. 
+- The reports data is modified to include a new field - **Degre** which determines if an accident resulted in a fatality or hospitalization. It can be useful as a dependent/target variable to classify reports. 
+- Environment file `tm-oil.yml` is updated and file structure is slightly modified to be more structured, please update your local repo as well as your local environment to make changes. 
+- A html file of the source code jupyter notebook is placed for easy viewing.
+
+### Old Updates:
 
 A conda environment file `tm-oil.yml` is now added to the repo along with the data files.  Please update your local repo to reflect these changes. Then navigate to the repo folder on your local file system using command line to create a conda virtual environment. Here are the steps:
 
