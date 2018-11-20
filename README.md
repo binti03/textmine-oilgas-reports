@@ -2,22 +2,22 @@
 
 - Text Preprocessing and Structuring is performed for all accident reports for the years 2017 -  2013. 
 - The reports data is modified to include a new field - **Degre** which determines if an accident resulted in a fatality or hospitalization. It can be useful as a dependent/target variable to classify reports. 
-- Environment file `tm-oil.yml` is updated and file structure is slightly modified to be more structured, please update your local repo as well as your local environment to make changes. 
+- Environment file `tm_oil.yml` is updated and file structure is slightly modified, please update your local repo as well as your local environment to make changes. 
 - A html file of the source code jupyter notebook is placed for easy viewing.
 
 ### Old Updates:
 
-A conda environment file `tm-oil.yml` is now added to the repo along with the data files.  Please update your local repo to reflect these changes. Then navigate to the repo folder on your local file system using command line to create a conda virtual environment. Here are the steps:
+A conda environment file `tm_oil.yml` is now added to the repo along with the data files.  Please update your local repo to reflect these changes. Then navigate to the repo folder on your local file system using command line to create a conda virtual environment. Here are the steps:
 
-- create environment : `conda env create -f tm-oil.yml`
-- activate environment: `activate tm-oil` for Windows, `source activate tm-oil` for Linux/Mac
+- create environment : `conda env create -f tm_oil.yml`
+- activate environment: `activate tm_oil` for Windows, `source activate tm_oil` for Linux/Mac
 - start or reload your jupyter notebook to select the environment from kernel  
 
 ![img](https://image.ibb.co/iVfedV/kernel-env.jpg)
 
 - While working on the file, if you need to install new packages use  `conda install [package_name]` . Make sure that the environment is active, else use `conda install -n myenv [package_name]`
-- Always export your environment (if it contains changes) before you push files to the remote repo. You can use `conda env export > tm-oil.yml` to generate a *yaml* file. 
-- When another team member updates the *yaml* file on remote repo, you can download it and update your local environment using `conda env update -f tm-oil.yml` 
+- Always export your environment (if it contains changes) before you push files to the remote repo. You can use `conda env export > tm_oil.yml` to generate a *yaml* file. 
+- When another team member updates the *yaml* file on remote repo, you can download it and update your local environment using `conda env update -f tm_oil.yml` 
 
 The conda virtual environment allows us to isolate a project and keeps the dependencies (packages and python versions) in separate “sandboxes” so we can switch between multiple projects without any hassles. 
 
